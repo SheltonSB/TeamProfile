@@ -48,7 +48,7 @@ export const utilityNav = [
 export const hero = {
   image:
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85",
-  eyebrow: "Grand Island-based technology partner",
+  eyebrow: "Lincoln-based technology partner",
   headline: {
     before: "Conditia AI builds systems that move businesses ",
     emphasis: "forward",
@@ -62,7 +62,7 @@ export const mission = {
   label: "Our Mission",
   heading: "We build practical systems for real business problems.",
   body:
-    "Conditia AI is a technology partner for businesses that need scalable, useful, and easy-to-adopt solutions. Based in Grand Island, Nebraska, we work behind the scenes to help teams operate more efficiently, make better decisions, and grow with stronger digital infrastructure.",
+    "Conditia AI is a technology partner for businesses that need scalable, useful, and easy-to-adopt solutions. Based in Lincoln, Nebraska, we work behind the scenes to help teams operate more efficiently, make better decisions, and grow with stronger digital infrastructure.",
   detail:
     "Our mission is to turn everyday operational friction into simple digital systems that people can actually use. We start with the workflow, learn where time and information are being lost, and build software, automation, dashboards, inspection tools, websites, and brand experiences that fit the business instead of forcing the business to fit the tool.",
 };
@@ -225,6 +225,7 @@ export const teamMembers = [
       "Leads software architecture, product development, and technical execution across Conditia AI projects.",
     image: "/team/shelton-bumhe.jpeg",
     initials: "SB",
+    linkedInUrl: "https://www.linkedin.com/in/shelton-bumhe-027476312/",
     icon: Linkedin,
   },
   {
@@ -233,6 +234,7 @@ export const teamMembers = [
     bio: "Supports product strategy, client partnerships, and business development.",
     image: "/team/yohannes-hailu.png",
     initials: "YH",
+    linkedInUrl: "https://www.linkedin.com/in/yohanneshailu/",
     icon: Linkedin,
   },
   {
@@ -241,13 +243,14 @@ export const teamMembers = [
     bio: "Supports operations, client relationships, and project execution.",
     image: "/team/ermias-wolde.jpeg",
     initials: "EW",
+    linkedInUrl: "https://www.linkedin.com/in/ermiaswolde/",
     icon: Linkedin,
   },
 ];
 
 export const contact = {
   phone: "(402) 905-5385",
-  location: "Grand Island, Nebraska",
+  location: "Lincoln, Nebraska",
   emails: ["sbumhe2@huskers.unl.edu"],
 };
 

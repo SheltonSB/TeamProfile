@@ -358,8 +358,10 @@ function App() {
                           <p className="mt-1 text-sm font-bold text-orange-500">{member.role}</p>
                         </div>
                         <a
-                          href="#contact"
-                          aria-label={`${member.name} LinkedIn placeholder`}
+                          href={member.linkedInUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`${member.name} LinkedIn profile`}
                           className="flex h-10 w-10 flex-none items-center justify-center rounded-md border border-navy-100 text-navy-800 transition hover:border-orange-500 hover:text-orange-500"
                         >
                           <LinkedInIcon className="h-5 w-5" aria-hidden="true" />
