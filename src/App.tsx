@@ -252,8 +252,8 @@ function App() {
                       </div>
                       <a
                         href={project.href}
-                        target={project.href !== "#" ? "_blank" : undefined}
-                        rel={project.href !== "#" ? "noreferrer" : undefined}
+                        target={!project.href.startsWith("#") ? "_blank" : undefined}
+                        rel={!project.href.startsWith("#") ? "noreferrer" : undefined}
                         className="mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-navy-900 px-5 text-sm font-bold text-white transition hover:bg-orange-500"
                       >
                         {project.buttonLabel}

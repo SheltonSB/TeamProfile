@@ -7,7 +7,6 @@ import {
   Building2,
   ClipboardCheck,
   Code2,
-  Database,
   Globe2,
   Handshake,
   Laptop,
@@ -276,8 +275,3 @@ export const footerColumns = [
 
 export const footerDescription =
   "Technology solutions for businesses ready to operate smarter.";
-
-export const footerContactIcons = {
-  database: Database,
-  mail: Mail,
-};
