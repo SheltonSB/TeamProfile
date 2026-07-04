@@ -49,10 +49,11 @@ export const utilityNav = [
 export const hero = {
   image:
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85",
+  eyebrow: "Grand Island-based technology partner",
   headline: {
-    before: "Conditia AI builds ",
-    emphasis: "technology",
-    after: " that moves businesses forward.",
+    before: "Conditia AI builds systems that move businesses ",
+    emphasis: "forward",
+    after: ".",
   },
   intro:
     "Conditia AI helps businesses modernize operations, reduce manual work, organize data, and create stronger digital experiences through practical software, automation, AI-assisted tools, and custom web solutions.",
@@ -62,7 +63,7 @@ export const mission = {
   label: "Our Mission",
   heading: "We build practical systems for real business problems.",
   body:
-    "Conditia AI is a technology partner for businesses that need scalable, useful, and easy-to-adopt solutions. Based in Omaha, Nebraska, we work behind the scenes to help teams operate more efficiently, make better decisions, and grow with stronger digital infrastructure.",
+    "Conditia AI is a technology partner for businesses that need scalable, useful, and easy-to-adopt solutions. Based in Grand Island, Nebraska, we work behind the scenes to help teams operate more efficiently, make better decisions, and grow with stronger digital infrastructure.",
   detail:
     "Our mission is to turn everyday operational friction into simple digital systems that people can actually use. We start with the workflow, learn where time and information are being lost, and build software, automation, dashboards, inspection tools, websites, and brand experiences that fit the business instead of forcing the business to fit the tool.",
 };
@@ -116,9 +117,9 @@ export const solutions: Array<{ title: string; text: string; icon: LucideIcon }>
     icon: ScanSearch,
   },
   {
-    title: "Websites & Branding",
+    title: "Branding Websites",
     text:
-      "We create modern websites and brand systems that help small businesses look professional and communicate clearly.",
+      "Modern websites and brand systems that help small businesses look professional, communicate clearly, and attract customers.",
     icon: Laptop,
   },
   {
@@ -128,6 +129,8 @@ export const solutions: Array<{ title: string; text: string; icon: LucideIcon }>
     icon: Handshake,
   },
 ];
+
+export const brandingWebsiteDemoUrl = "#";
 
 export const currentWork = [
   {
@@ -146,12 +149,14 @@ export const currentWork = [
       "Faster reviews with less manual effort",
       "Safer, scalable inspection process",
     ],
+    buttonLabel: "View Project",
+    href: "#current-work",
   },
   {
-    title: "Makanaka Shop",
-    subtitle: "Branding & Website Development",
+    title: "Branding Website",
+    subtitle: "Small Business Digital Presence",
     text:
-      "We are building a modern brand and website experience for Makanaka Shop to help the business present itself professionally, communicate clearly, and reach more customers online.",
+      "We build modern branding websites that help small businesses present themselves professionally, communicate clearly, and reach more customers online.",
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=85",
     icon: Store,
@@ -162,6 +167,8 @@ export const currentWork = [
       "Mobile-friendly customer experience",
       "Stronger digital presence",
     ],
+    buttonLabel: "View Work",
+    href: brandingWebsiteDemoUrl,
   },
 ];
 
@@ -175,7 +182,7 @@ export const audiences: Array<{ title: string; text: string; icon: LucideIcon }>
   {
     title: "Small Businesses",
     text:
-      "For businesses that need modern websites, branding, automation, and digital tools without unnecessary complexity.",
+      "For businesses that need modern branding websites, automation, and digital tools without unnecessary complexity.",
     icon: Building2,
   },
   {
@@ -186,19 +193,26 @@ export const audiences: Array<{ title: string; text: string; icon: LucideIcon }>
   },
 ];
 
+export const about = {
+  label: "ABOUT CONDITIA AI",
+  heading: "Technology partner, not just a service provider.",
+  body:
+    "We do not believe every business problem needs a complicated system. Our approach is to understand the workflow first, then build technology that fits the way the business actually operates. Whether the solution is a dashboard, inspection platform, automation tool, or branding website, the goal is always the same: make the business easier to run and easier to grow.",
+};
+
 export const aboutPoints = [
   {
-    title: "Workflow first",
+    title: "Understand First",
     text: "We study the real process before recommending software, automation, or a website.",
     icon: ClipboardCheck,
   },
   {
-    title: "Useful by design",
+    title: "Build Practical Systems",
     text: "Every screen, dashboard, and customer-facing page should make the business easier to run.",
     icon: BadgeCheck,
   },
   {
-    title: "Built to improve",
+    title: "Partner Long Term",
     text: "We treat technology as an ongoing partnership, not a one-time handoff.",
     icon: ShieldCheck,
   },
@@ -210,7 +224,7 @@ export const teamMembers = [
     role: "Co-Founder & Technology Lead",
     bio:
       "Leads software architecture, product development, and technical execution across Conditia AI projects.",
-    image: "",
+    image: "/team/shelton-bumhe.jpeg",
     initials: "SB",
     icon: Linkedin,
   },
@@ -234,8 +248,8 @@ export const teamMembers = [
 
 export const contact = {
   phone: "(402) 905-5385",
-  location: "Omaha, Nebraska, USA",
-  emails: ["shelton@conditia.ai", "yohannes@conditia.ai", "ermias@conditia.ai"],
+  location: "Grand Island, Nebraska",
+  emails: ["sbumhe2@huskers.unl.edu"],
 };
 
 export const contactItems = [
@@ -255,7 +269,7 @@ export const footerColumns = [
       { label: "Custom Software", href: "#solutions" },
       { label: "Automation", href: "#solutions" },
       { label: "Data Dashboards", href: "#solutions" },
-      { label: "Websites & Branding", href: "#solutions" },
+      { label: "Branding Websites", href: "#solutions" },
     ],
   },
 ];

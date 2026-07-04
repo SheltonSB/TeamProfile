@@ -3,6 +3,7 @@ import { ArrowRight, Check, Menu, X } from "lucide-react";
 import { Logo } from "./components/Logo";
 import { SectionHeader } from "./components/SectionHeader";
 import {
+  about,
   aboutPoints,
   announcement,
   audiences,
@@ -124,7 +125,7 @@ function App() {
               <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                 <div className="max-w-5xl">
                   <p className="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-orange-400">
-                    Omaha-based technology partner
+                    {hero.eyebrow}
                   </p>
                   <h1 className="text-4xl font-bold leading-tight tracking-normal text-white sm:text-5xl lg:text-6xl">
                     {hero.headline.before}
@@ -249,6 +250,15 @@ function App() {
                           </div>
                         ))}
                       </div>
+                      <a
+                        href={project.href}
+                        target={project.href !== "#" ? "_blank" : undefined}
+                        rel={project.href !== "#" ? "noreferrer" : undefined}
+                        className="mt-8 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-navy-900 px-5 text-sm font-bold text-white transition hover:bg-orange-500"
+                      >
+                        {project.buttonLabel}
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </a>
                     </div>
                   </article>
                 );
@@ -283,22 +293,16 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="bg-navy-900 px-5 py-24 text-white sm:px-6 lg:px-8">
-          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+        <section id="about" className="bg-navy-900 px-5 py-20 text-white sm:px-6 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div>
               <p className="mb-4 text-sm font-bold uppercase tracking-[0.28em] text-orange-400">
-                About Conditia AI
+                {about.label}
               </p>
               <h2 className="text-3xl font-bold tracking-normal sm:text-4xl lg:text-5xl">
-                Technology partner, not just a service provider.
+                {about.heading}
               </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-200">
-                We do not believe every business problem needs a complicated system. Our approach is
-                to understand the workflow first, then build technology that fits the way the
-                business actually operates. Whether the solution is a dashboard, inspection
-                platform, automation tool, or website, the goal is always the same: make the
-                business easier to run and easier to grow.
-              </p>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white">{about.body}</p>
             </div>
             <div className="grid gap-4">
               {aboutPoints.map((point) => {
@@ -306,11 +310,11 @@ function App() {
                 return (
                   <article
                     key={point.title}
-                    className="rounded-md border border-white/15 bg-white/[0.06] p-6"
+                    className="rounded-md border border-white/15 bg-white p-6 text-navy-950 shadow-panel"
                   >
                     <Icon className="h-6 w-6 text-orange-400" aria-hidden="true" />
                     <h3 className="mt-4 text-xl font-bold">{point.title}</h3>
-                    <p className="mt-3 leading-7 text-slate-200">{point.text}</p>
+                    <p className="mt-3 leading-7 text-slate-600">{point.text}</p>
                   </article>
                 );
               })}
@@ -377,7 +381,7 @@ function App() {
                 Let's build something that moves your business forward.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-white/90">
-                Whether you need a smarter workflow, drone-assisted inspection, a modern website,
+                Whether you need a smarter workflow, drone-assisted inspection, a branding website,
                 automation, or a custom software solution, Conditia AI can help turn your business
                 problem into a practical technology solution.
               </p>

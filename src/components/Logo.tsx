@@ -19,7 +19,7 @@ export function Logo({ inverted = false }: LogoProps) {
           Conditia <span className={inverted ? "text-orange-400" : "text-orange-500"}>AI</span>
         </span>
         <span className={`text-xs font-semibold uppercase tracking-[0.22em] ${inverted ? "text-white/70" : "text-navy-700"}`}>
-          Omaha, Nebraska
+          Grand Island, Nebraska
         </span>
       </span>
     </a>
